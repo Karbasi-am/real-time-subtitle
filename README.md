@@ -30,8 +30,8 @@ scoop install ffmpeg
 ## More
 
 ### Translation
-you can use --language to select a language (fr, zh, fa, etc..)
-this tool will translate the english STT to the selected language and displays the text on screen
+you can select a language (fr, zh, fa, etc..) for the translation
+this tool will translate the english text output from whisper to the selected language and displays the text on screen
 
 ```
 # an example for real time translation
@@ -39,4 +39,9 @@ python3 main.py --model small --language fa
 ```
 
 ### Font
-you can change and choose font color and font size with --font_color and --font_size
+you can change and choose font color and font size
+
+```
+# an example for font size and font color
+python3 main.py --model small --font_size 24 --font_color "yellow"
+```
