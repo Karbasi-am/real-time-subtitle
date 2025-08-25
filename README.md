@@ -43,5 +43,5 @@ you can change and choose font color and font size
 
 ```
 # an example for font size and font color
-python3 main.py --model small --font_size 24 --font_color "yellow"
+python3 main.py --model small --font_size 20 --font_color "white"
 ```
