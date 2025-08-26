@@ -168,18 +168,18 @@ root.title("Subtitle")
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
 
-window_width = 400
-window_height = 100
+window_width = screen_width // 3
+window_height = screen_height // 9
 
 # To place the window in the middle of the screen
 
-x = (screen_width // 2) - (400 // 2)
+x = (screen_width // 2) - (window_width // 2)
 
 # Setting window size
 root.geometry(f"{window_width}x{window_height}")
 
 # Setting window position
-root.geometry(f"+{x}-{50}")
+root.geometry(f"+{x}-{45}")
 
 root.configure(bg='black')
 
@@ -191,7 +191,7 @@ root.overrideredirect(True)
 # Override on other windows
 root.attributes('-topmost', True)
 
-label = tk.Label(root, text="", font=("Arial", font_size), fg=font_color, bg="black", wraplength=380)
+label = tk.Label(root, text="", font=("Arial", font_size), fg=font_color, bg="black", wraplength=int(window_width - window_width * 0.05))
 label.pack(expand=True)
 root.update()
 root.mainloop()
